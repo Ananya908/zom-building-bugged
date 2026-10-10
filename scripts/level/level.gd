@@ -58,6 +58,7 @@ func kill_enemies():
 
 func level_complete():
 	EventBus.level_number += 1
+	label_3.text = "LEVEL: %d" % EventBus.level_number
 	EventBus.player.set_checkpoint()
 	get_tree().paused = true
 	level_clear_label.visible = true

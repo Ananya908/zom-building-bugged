@@ -45,7 +45,6 @@ func _physics_process(_delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity
 	move_and_slide()
-	
 	if player_in_range and attack_cooldown.time_left==0:
 		attack()
 
